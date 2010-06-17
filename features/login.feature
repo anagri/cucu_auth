@@ -9,5 +9,4 @@ Feature: login
     When  I follow "Logout"
     Then  I should be on the root page
     And   should see "Login"
-    And   should see "Successfully logged out"
 

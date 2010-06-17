@@ -9,7 +9,6 @@ When /^is logged in to the application$/ do
   And press "Login"
 
   Then I should be on the root page
-  And should see "Successfully logged in"
   And should see "Logout"
 }
 end
