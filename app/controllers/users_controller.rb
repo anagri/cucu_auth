@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  # GET /users
-  # GET /users.xml
   filter_resource_access
   
   def index

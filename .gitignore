@@ -2,3 +2,4 @@ log
 .idea
 doc
 db/*.sqlite3
+tmp

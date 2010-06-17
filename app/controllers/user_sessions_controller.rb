@@ -1,10 +1,8 @@
 class UserSessionsController < ApplicationController
-  before_filter :new_user_session_from_params, :only => :new
-  before_filter :load_user_session, :only => :destroy
   filter_resource_access
 
   def new
-    @user_session = UserSession.new
+    @user_session = UserSession.new #overridding instance variable setting by declarative authorization
   end
 
   def create
