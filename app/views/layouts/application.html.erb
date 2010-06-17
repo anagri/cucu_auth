@@ -4,12 +4,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Users: <%= controller.action_name %></title>
+  <title>Sample Authlogic, Declarative Authorization, Cucumber Application: <%= controller.controller_name %>::<%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
 
 <p style="color: green"><%= notice %></p>
+<p style="color: red"><%= alert %></p>
+
+<% if current_user %>
+    <p><%= link_to 'Logout', logout_path %></p>
+<% else %>
+    <p><%= link_to 'Login', login_path %> | <%= link_to 'Register', new_user_path %></p>
+<% end %>
 
 <%= yield %>
 
