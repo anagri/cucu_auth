@@ -1,4 +1,4 @@
 log
 .idea
 doc
-
+db/*.sqlite3
